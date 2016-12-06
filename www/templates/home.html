@@ -1,0 +1,22 @@
+<ion-view view-title="Musolist">
+    <ion-content ng-controller="ExampleController">
+        <div ng-repeat="data in shows" class="list card">
+            <div class="item item-avatar">
+                <img src="https://lh3.googleusercontent.com/proxy/TyxwXxdExf_vGAqCfrsQvvo-wMrfVPn7Bby9ybdZApDp9j-NCIHEz38nGNJsNuHV_c9yNEWrZN26EZTj-jRSURkQZYkSQfGpK--fcTgH=s426">
+                <h2>{{data.title}}</h2>
+                <p>{{data.date}}</p>
+                <p>{{data.url}}</p>
+            </div>
+            <div class="item item-image">
+                <img src="https://musolist.com/assets/logo-f6d95ffab12fa727eecf04d8d23eab45.png">
+            </div>
+            <a class="item item-icon-left assertive" ng-click="play('http://s3.amazonaws.com/musolist/podcasts-app/shows/139.mp3')">
+                <i class="icon ion-music-note"></i> Start Podcast
+            </a>
+            <!-- <a class="item item-icon-left assertive" ng-click="play('/android_asset/www/audio/song.mp3')">
+   <i class="icon ion-music-note"></i> Start Podcast Locally
+-->
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

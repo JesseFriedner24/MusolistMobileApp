@@ -1,0 +1,11 @@
+{
+    "shows": [{
+        "title": "Daily Commute #148",
+        "url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/show148.json",
+        "date": "2016-10-01"
+    }, {
+        "title": "Daily Commute #139",
+        "url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/show139.json",
+        "date": "2016-09-30"
+    }]
+}
