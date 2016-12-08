@@ -23,9 +23,20 @@ var example = angular.module('ionicSound', ['ionic', 'angular-momentjs', 'ngCord
 example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLoading) {
     $scope.play = function(src) {
         console.log('src: ' + src);
-        var media = new Media(src, null, null, mediaStatusCallback);
-        $cordovaMedia.play(media);
+        var media = $cordovaMedia.newMedia(src, null, null, mediaStatusCallback);
+        console.log(media);
+        media.play();
     }
+
+    $scope.pause = function(src) {
+        console.log();
+        var media = $cordovaMedia.newMedia(src, null, null, mediaStatusCallback);
+
+        media.pause();
+    }
+
+
+
 
     var mediaStatusCallback = function(status) {
         if (status == 1) {
@@ -43,7 +54,7 @@ example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLo
         url: "/app",
         abstract: true,
         templateUrl: "templates/menu.html",
-        //controller: 'AppCtrl'
+        controller: 'AppCtrl'
     })
 
     .state('app.home', {
