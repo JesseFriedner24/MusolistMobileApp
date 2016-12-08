@@ -83,6 +83,15 @@ example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLo
                     controller: 'musolistPodCtrl'
                 }
             }
+        })
+        .state('app.podplayer', {
+            url: "/podplayer",
+            views: {
+                'menuContent': {
+                    templateUrl: "templates/podplayer.html",
+                    controller: 'homeService'
+                }
+            }
         });
     $urlRouterProvider.otherwise('/app/home');
 });
