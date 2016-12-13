@@ -1,28 +1,32 @@
-<ion-view class="background" view-title="Musolist">
+<ion-view class="background" view-title="Pod Player">
     <ion-content ng-controller="ExampleController">
-        <div ng-repeat="data in shows" class="list card">
-            <div class="item tabs tabs-secondary tabs-icon-left">
-                <div class="item item-image">
-                    <!-- <img src="../img/musoimage.png">
- -->
-                </div>
-                <a class="tab-item dark" ng-click="play('https://s3.amazonaws.com/musolist/podcasts-app/shows/148.m4a')">
-                    <i class="icon ion-music-note assertive"></i> Start Podcast
-                </a>
-                <a class="tab-item dark" ng-click="pause()">
-                    <i class="icon ion-pause assertive"></i> Pause
-                </a>
-                <a class="tab-item dark" ng-click="()">
-                    <i class="icon ion-bookmark assertive"></i> Bookmark
-                </a>
-                <!-- <a class="item item-icon-left assertive" ng-click="play('/android_asset/www/audio/song.mp3')">
-   <i class="icon ion-music-note"></i> Start Podcast Locally
--->
+        <div class="list card">
+            <div class="item item-avatar">
+                <img src="https://pbs.twimg.com/profile_images/714877177804767232/zo3EK9Uq.jpg">
+                <h2>Blink 182</h2>
+                <p>Feeling it</p>
             </div>
-            </a>
+            <div class="item item-body">
+                <img class="full-image" src="http://data.whicdn.com/images/43228099/original.jpg">
+                <div class="item tabs tabs-secondary tabs-icon-left">
+                    <div class="item item-image">
+                    </div>
+                    <a class="tab-item dark" ng-click="play('https://s3.amazonaws.com/musolist/podcasts-app/shows/148.m4a')">
+                        <i class="icon ion-music-note assertive"></i> Start Podcast
+                    </a>
+                    <a class="tab-item dark" onClick="pauseAudio();">
+                        <i class="icon ion-pause assertive"></i> Pause
+                    </a>
+                    <a class="tab-item dark" ng-click="">
+                        <i class="icon ion-bookmark assertive"></i> Bookmark
+                    </a>
+                </div>
+            </div>
+            <p>
+                <a href="#" class="subdued">100,224 Likes</a>
+                <a href="#" class="subdued">24,000 Comments</a>
+            </p>
+        </div>
         </div>
     </ion-content>
-    <div class="bar bar-footer bar-dark">
-        <div class="title">Music for locals, by locals</div>
-    </div>
 </ion-view>

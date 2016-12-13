@@ -89,7 +89,7 @@ example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLo
             views: {
                 'menuContent': {
                     templateUrl: "templates/podplayer.html",
-                    controller: 'homeService'
+                    // controller: 'homeService'
                 }
             }
         });

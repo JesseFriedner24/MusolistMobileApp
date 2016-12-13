@@ -39,3 +39,42 @@ angular.module('ionicSound')
             }, 1000);
         };
     })
+
+.controller('AudioController', function($scope, $ionicPlatform, $timeout) {
+            var audio = [{
+                id: 1,
+                key: 'morning',
+                title: "Morning Commute 148",
+                track: 'audio/148.m4a',
+                date: "2016-10-01"
+            }, {
+                id: 2,
+                key: 'give',
+                title: "Morning Commute 139",
+                track: 'audio/139.mp3',
+                date: '2016-09-30'
+            }, ];
+
+    example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLoading) {
+        $scope.play = function(src) {
+            console.log('src: ' + src);
+            var media = $cordovaMedia.newMedia(src, null, null, mediaStatusCallback);
+            console.log(media);
+            media.play();
+        }
+
+        $scope.pause = function(src) {
+            console.log();
+            var media = $cordovaMedia.newMedia(src, null, null, mediaStatusCallback);
+
+            media.pause();
+        }
+        var mediaStatusCallback = function(status) {
+            if (status == 1) {
+                $ionicLoading.show({ template: "Loading..." });
+            } else {
+                $ionicLoading.hide();
+            }
+        };
+    });
+});

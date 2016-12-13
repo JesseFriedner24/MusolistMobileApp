@@ -1,11 +1,16 @@
 {
     "shows": [{
+        "id": 1,
         "title": "Daily Commute #148",
         "url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/show148.json",
-        "date": "2016-10-01"
+        "date": "2016-10-01",
+        "track": "https://s3.amazonaws.com/musolist/podcasts-app/shows/148.m4a"
+
     }, {
+        "id": 2,
         "title": "Daily Commute #139",
         "url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/show139.json",
-        "date": "2016-09-30"
+        "date": "2016-09-30",
+        "track": "https://s3.amazonaws.com/musolist/podcasts-app/shows/139.mp3"
     }]
 }

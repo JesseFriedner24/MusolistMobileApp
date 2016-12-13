@@ -3,30 +3,23 @@
         <div ng-repeat="data in shows" class="list card">
             <div class="item item-avatar">
                 <img src="../img/musoimage.png">
-                <a href="#/podplayer"></a>
                 <h2>{{data.title}}</h2>
                 <p>{{data.date}}</p>
                 <p>{{data.url}}</p>
             </div>
             <div class="item tabs tabs-secondary tabs-icon-left">
                 <div class="item item-image">
-                    <!-- <img src="../img/musoimage.png">
- -->
                 </div>
-                <a class="tab-item dark" ng-click="play('https://s3.amazonaws.com/musolist/podcasts-app/shows/148.m4a')">
+                <a class="tab-item dark" ng-click="play(data.track)">
                     <i class="icon ion-music-note assertive"></i> Start Podcast
                 </a>
                 <a class="tab-item dark" ng-click="pause()">
                     <i class="icon ion-pause assertive"></i> Pause
                 </a>
-                <a class="tab-item dark" ng-click="()">
+                <a class="tab-item dark" ng-click="">
                     <i class="icon ion-bookmark assertive"></i> Bookmark
                 </a>
-                <!-- <a class="item item-icon-left assertive" ng-click="play('/android_asset/www/audio/song.mp3')">
-   <i class="icon ion-music-note"></i> Start Podcast Locally
--->
             </div>
-            </a>
         </div>
     </ion-content>
     <div class="bar bar-footer bar-dark">
