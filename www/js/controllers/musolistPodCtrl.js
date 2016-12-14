@@ -2,13 +2,11 @@ angular.module('ionicSound')
     .controller('musolistPodCtrl', ['$scope', '$ionicLoading', 'SoundCloudQuery', '$ionicModal', '$moment',
         function($scope, $ionicLoading, SoundCloudQuery, $ionicModal, $moment) {
             var query = SoundCloudQuery.queryByUser({ user: 'musolist-official' });
-
             /**
              * init controller
              * 
              */
             function init() {
-
                 $ionicLoading.show({
                     template: 'Loading...'
                 });
@@ -22,24 +20,17 @@ angular.module('ionicSound')
                 $scope.loadMore();
 
             }
-
-
             /**
              * Loads more data. Used to get more records
              * @return {Promise} The resulting promise to hook to
              */
             $scope.loadMore = function() {
-
                 return query.getNextPage().then(function(tracks) {
                     $scope.tracks = $scope.tracks ? $scope.tracks.concat(tracks) : tracks;
                     $ionicLoading.hide();
                     return tracks;
                 });
-
             }
-
             init();
-
-
         }
     ]);

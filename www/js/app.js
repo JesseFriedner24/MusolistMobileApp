@@ -17,25 +17,32 @@ var example = angular.module('ionicSound', ['ionic', 'angular-momentjs', 'ngCord
             // org.apache.cordova.statusbar required
             StatusBar.styleDefault();
         }
+
+
     });
 })
 
 example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLoading) {
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    function onDeviceReady() {
+        console.log(Media);
+    }
     $scope.play = function(src) {
         console.log('src: ' + src);
         var media = $cordovaMedia.newMedia(src, null, null, mediaStatusCallback);
         console.log(media);
         media.play();
+    };
+
+
+    $scope.pause = function() {
+        if (media) {
+            var media = $cordovaMedia.newMedia(src, null, null, mediaStatusCallback);
+            console.log(media);
+            media.pause();
+        }
     }
-
-    $scope.pause = function(src) {
-        console.log();
-        var media = $cordovaMedia.newMedia(src, null, null, mediaStatusCallback);
-
-        media.pause();
-    }
-
-
 
 
     var mediaStatusCallback = function(status) {
@@ -46,6 +53,7 @@ example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLo
         }
     };
 })
+
 
 .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider

@@ -1,23 +1,23 @@
-<ion-view class="background" view-title="Pod Player">
+<ion-view view-title="Pod Player">
     <ion-content ng-controller="ExampleController">
-        <div class="list card">
-            <div class="item item-avatar">
+        <div class="list card item item-trns">
+            <div class="item item-avatar item item-trns">
                 <img src="https://pbs.twimg.com/profile_images/714877177804767232/zo3EK9Uq.jpg">
                 <h2>Blink 182</h2>
                 <p>Feeling it</p>
             </div>
-            <div class="item item-body">
-                <img class="full-image" src="http://data.whicdn.com/images/43228099/original.jpg">
-                <div class="item tabs tabs-secondary tabs-icon-left">
+            <div class="item item-body item item-trns">
+                <img class="full-image" src="http://data.whicdn.com/images/43228099/original.jpg ">
+                <div class="item tabs tabs-secondary tabs-icon-left item item-trns">
                     <div class="item item-image">
                     </div>
-                    <a class="tab-item dark" ng-click="play('https://s3.amazonaws.com/musolist/podcasts-app/shows/148.m4a')">
+                    <a class="tab-item assertive" ng-click="play(data.track)">
                         <i class="icon ion-music-note assertive"></i> Start Podcast
                     </a>
-                    <a class="tab-item dark" onClick="pauseAudio();">
+                    <a class="tab-item assertive" onClick="pauseAudio();">
                         <i class="icon ion-pause assertive"></i> Pause
                     </a>
-                    <a class="tab-item dark" ng-click="">
+                    <a class="tab-item assertive" ng-click="">
                         <i class="icon ion-bookmark assertive"></i> Bookmark
                     </a>
                 </div>

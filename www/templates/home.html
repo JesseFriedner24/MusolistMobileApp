@@ -1,4 +1,4 @@
-<ion-view class="background" view-title="Musolist">
+<ion-view class="outer-content" view-title="Musolist">
     <ion-content ng-controller="ExampleController">
         <div ng-repeat="data in shows" class="list card">
             <div class="item item-avatar">
@@ -10,13 +10,13 @@
             <div class="item tabs tabs-secondary tabs-icon-left">
                 <div class="item item-image">
                 </div>
-                <a class="tab-item dark" ng-click="play(data.track)">
+                <a class="tab-item assertive" ng-click="play(data.track)">
                     <i class="icon ion-music-note assertive"></i> Start Podcast
                 </a>
-                <a class="tab-item dark" ng-click="pause()">
+                <a class="tab-item assertive" ng-click="pause(data.track)">
                     <i class="icon ion-pause assertive"></i> Pause
                 </a>
-                <a class="tab-item dark" ng-click="">
+                <a class="tab-item assertive" ng-click="">
                     <i class="icon ion-bookmark assertive"></i> Bookmark
                 </a>
             </div>
