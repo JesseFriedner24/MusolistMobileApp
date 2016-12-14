@@ -31,18 +31,40 @@ example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLo
     $scope.play = function(src) {
         console.log('src: ' + src);
         var media = $cordovaMedia.newMedia(src, null, null, mediaStatusCallback);
-        console.log(media);
+
+
+
+
+        var mediaTimer = setInterval(function() {
+            console.log('5 seconds');
+            // get media position
+            media.getCurrentPosition(
+                // success callback
+                function(position) {
+                    if (position > -5) {
+                        console.log((position) + " sec");
+                    }
+                },
+                // error callback
+                function(e) {
+                    console.log("Error getting pos=" + e);
+                }
+            );
+        }, 1000);
+
+
+
+        //play audio
         media.play();
+        //pause audio
+        $scope.pause = function() {
+            if (src) {
+                media.pause();
+                console.log();
+            }
+        }
     };
 
-
-    $scope.pause = function() {
-        if (media) {
-            var media = $cordovaMedia.newMedia(src, null, null, mediaStatusCallback);
-            console.log(media);
-            media.pause();
-        }
-    }
 
 
     var mediaStatusCallback = function(status) {
@@ -97,7 +119,7 @@ example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLo
             views: {
                 'menuContent': {
                     templateUrl: "templates/podplayer.html",
-                    // controller: 'homeService'
+                    controller: 'homeService'
                 }
             }
         });
