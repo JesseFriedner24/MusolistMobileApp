@@ -26,4 +26,13 @@ angular.module('ionicSound')
             $rootScope.playlist = data.playlist;
             $scope.modal2.show(data);
         }
+    
+            $scope.images = [];
+ 
+    $scope.loadImages = function() {
+        for(var i = 0; i < 100; i++) {
+            $scope.images.push({id: i, src: "{{selectedTrack.playlist[1].cover_url}}"});
+        }
+    }
+ 
     }]);

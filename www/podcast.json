@@ -1,6 +1,131 @@
 {
     "shows": [{
-        "id": 1,
+        "title": "Daily Commute #175",
+        "url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/show175.json",
+        "date": "2016-12-06",
+        "track": "https://s3.amazonaws.com/musolist/podcasts-app/shows/175.mp3",
+        "playlist": [{
+            "songtitle": "Everybody's Wearing My Hat",
+            "artist": "The Shrimps",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/The-Shrimps.jpg",
+            "start": "00:04",
+            "end": "02:12"
+        }, {
+            "songtitle": "Bitter Sun",
+            "artist": "Jeremy Aaron",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/jeremy+aaron.jpg",
+            "start": "02:14",
+            "end": "05:46"
+        }, {
+            "songtitle": "Ocean Blue",
+            "artist": "Willow Robinson",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/willow+robinson.jpg",
+            "start": "05:47",
+            "end": "11:40"
+        }, {
+            "songtitle": "Homeward",
+            "artist": "Indie Soull",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/indie+soull.jpg",
+            "start": "11:41",
+            "end": "16:01"
+        }, {
+            "songtitle": "Black Mare",
+            "artist": "Simeon Flick",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/simeon+flick.jpg",
+            "start": "16:02",
+            "end": "23:14"
+        }, {
+            "songtitle": "Turbulence",
+            "artist": "Tori Roze & The Hot Mess",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/tori+roze.jpg",
+            "start": "23:19",
+            "end": "25:37"
+        }, {
+            "songtitle": "I've Changed My Ways",
+            "artist": "Wayne Gidden",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/wayne+gidden.jpg",
+            "start": "25:37",
+            "end": "29:12"
+        }, {
+            "songtitle": "Waiting For You",
+            "artist": "Malynda Hale",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/malynda+hale.jpg",
+            "start": "29:14",
+            "end": "32:56"
+        }, {
+            "songtitle": "Counting Trees",
+            "artist": "Atomic 7",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/loren+perelman.jpg",
+            "start": "32:57",
+            "end": "33:50"
+        }]
+    }, {
+        "title": "Daily Commute #170",
+        "url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/show170.json",
+        "date": "2016-12-01",
+        "track": "https://s3.amazonaws.com/musolist/podcasts-app/shows/170.mp3",
+        "playlist": [{
+            "songtitle": "My Kinda Crowd",
+            "artist": "Chill Clinton",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/chill+clinton.jpg",
+            "start": "00:04",
+            "end": "02:55"
+        }, {
+            "songtitle": "Hello",
+            "artist": "Cole Phoenix",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/cole+phoenix.jpg",
+            "start": "03:01",
+            "end": "06:35"
+        }, {
+            "songtitle": "Love You So",
+            "artist": "Kill For Eden",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/kill+for+eden.jpg",
+            "start": "06:36",
+            "end": "10:37"
+        }, {
+            "songtitle": "City Girl",
+            "artist": "Mason Murphy",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/mason+murphy.jpg",
+            "start": "10:37",
+            "end": "14:21"
+        }, {
+            "songtitle": "Vienna",
+            "artist": "Eli Tidmore",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/eli+tidmore.jpg",
+            "start": "14:24",
+            "end": "17:36"
+        }, {
+            "songtitle": "No Good For You",
+            "artist": "Christian Heath",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/christian+heath.jpg",
+            "start": "17:36",
+            "end": "20:44"
+        }, {
+            "songtitle": "Want You So Bad",
+            "artist": "The Modern Hearts",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/the+modern+hearts.jpg",
+            "start": "20:49",
+            "end": "24:08"
+        }, {
+            "songtitle": "Savanna",
+            "artist": "Lucas Silveira",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/lucas+silveira.jpg",
+            "start": "24:09",
+            "end": "27:34"
+        }, {
+            "songtitle": "Julia",
+            "artist": "Fast Romantics",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/Fast-Romantics.jpg",
+            "start": "27:35",
+            "end": "30:50"
+        }, {
+            "songtitle": "Electropolis",
+            "artist": "Franturi",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/franturi.jpg",
+            "start": "30:51",
+            "end": "31:51"
+        }]
+    }, {
         "title": "Daily Commute #148",
         "url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/show148.json",
         "date": "2016-10-01",
@@ -59,7 +184,6 @@
             "end": "33:00"
         }]
     }, {
-        "id": 2,
         "title": "Daily Commute #139",
         "url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/show139.json",
         "date": "2016-09-30",

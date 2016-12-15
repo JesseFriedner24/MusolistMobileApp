@@ -25,6 +25,8 @@ var example = angular.module('ionicSound', ['ionic', 'angular-momentjs', 'ngCord
 example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLoading, $rootScope) {
     document.addEventListener("deviceready", onDeviceReady, false);
     $rootScope.podcastPositionSeconds = 0;
+    $rootScope.bookmarkList = [];
+    $rootScope.bookmarkedSong = {};
 
     function onDeviceReady() {
         console.log(Media);
@@ -58,14 +60,21 @@ example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLo
 
             var startTimeString = startTimeInSeconds.toString();
             var endTimeString = endTimeInSeconds.toString();
-
             // console.log(startTimeString);
             // console.log(endTimeString);
+           
 
 
             if ((trackPosition >= startTimeInSeconds) && (trackPosition <= endTimeInSeconds)) {
                 console.log($rootScope.playlist[i].artist);
                 console.log($rootScope.playlist[i].songtitle);
+                 var artistName = $rootScope.playlist[i].artist;
+            var songTitle = $rootScope.playlist[i].songtitle;
+            var bookmarkedSong = {
+                artist : artistName,
+                title: songTitle
+            }
+            $rootScope.bookmarkList.push(bookmarkedSong);
             } else {
         
             }
@@ -89,6 +98,8 @@ example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLo
                 console.log();
             }
         }
+    
+
     };
 
     var mediaStatusCallback = function(status) {
@@ -99,6 +110,7 @@ example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLo
         }
     };
 })
+
 
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -125,7 +137,7 @@ example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLo
             views: {
                 'menuContent': {
                     templateUrl: "templates/bookmark.html",
-                    //controller: 'BrowseCtrl'
+                    controller: 'bookmarkCtrl'
                 }
             }
         })

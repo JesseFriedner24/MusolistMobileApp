@@ -1,20 +1,25 @@
 <ion-view class="background" view-title="Library">
-    <ion-content>
+    <ion-content ng-controller="bookmarkCtrl">
+  
+
+
         <div class="list card">
             <div class="item item-avatar">
                 <img src="https://pbs.twimg.com/profile_images/714877177804767232/zo3EK9Uq.jpg">
-                <h2>Blink 182</h2>
-                <p>Feeling it</p>
+                <ul ng-repeat="bookmark in bookmarkList">
+                <li>{{bookmark.artist}}</li>
+                <li>{{bookmark.title}}</li>
+                </ul>
             </div>
-            <div class="item item-body">
+            <!-- <div class="item item-body">
                 <img class="full-image" src="http://data.whicdn.com/images/43228099/original.jpg">
                 <p>
                     Blink 182 is the greatest band ever!.
                 </p>
-                <p>
-                    <a href="#" class="subdued">1 Like</a>
+                <p> -->
+              <!--       <a href="#" class="subdued">1 Like</a>
                     <a href="#" class="subdued">5 Comments</a>
-                </p>
+                </p> -->
             </div>
         </div>
     </ion-content>
