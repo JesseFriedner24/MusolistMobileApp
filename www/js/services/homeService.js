@@ -1,17 +1,14 @@
 angular.module('ionicSound')
-    .controller('homeService', ['$scope', '$http', '$ionicModal', '$ionicPlatform', function($scope, $http, $ionicModal, $ionicPlatform) {
+    .controller('homeService', ['$scope', '$http', '$ionicModal', '$ionicPlatform', '$rootScope', function($scope, $http, $ionicModal, $ionicPlatform, $rootScope) {
+        // $rootscope.showData = url();
 
         $scope.data = [];
-
         var url = 'podcast.json';
-
         $http.get(url).success(function(data) {
             $scope.shows = data.shows;
             console.log(data);
 
         });
-
-
         $ionicModal.fromTemplateUrl('templates/podPlayer.html', {
             scope: $scope
         }).then(function(modal) {
@@ -22,12 +19,11 @@ angular.module('ionicSound')
         $scope.closePod = function() {
             $scope.modal2.hide();
         };
-
-
         $scope.resultClick = function(data) {
 
             console.log(data);
             $scope.selectedTrack = data;
+            $rootScope.playlist = data.playlist;
             $scope.modal2.show(data);
         }
     }]);

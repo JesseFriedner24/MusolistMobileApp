@@ -4,13 +4,120 @@
         "title": "Daily Commute #148",
         "url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/show148.json",
         "date": "2016-10-01",
-        "track": "https://s3.amazonaws.com/musolist/podcasts-app/shows/148.m4a"
-
+        "track": "https://s3.amazonaws.com/musolist/podcasts-app/shows/148.m4a",
+        "playlist": [{
+            "songtitle": "Chicago Dream",
+            "artist": "Sister Speak",
+            "start": "00:15",
+            "end": "03:05"
+        }, {
+            "songtitle": "Vienna",
+            "artist": "Eli Tidmore",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/Eli-Tidmore.jpg",
+            "start": "03:25",
+            "end": "06:20"
+        }, {
+            "songtitle": "Love the Pain",
+            "artist": "Maayan",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/Maayan.jpg",
+            "start": "06:21",
+            "end": "09:32"
+        }, {
+            "songtitle": "Cherry Wine",
+            "artist": "Willow Robinson",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/Willow-Robinson.jpg",
+            "start": "10:05",
+            "end": "13:50"
+        }, {
+            "songtitle": "Bird On Me Street",
+            "artist": "The Shrimps",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/The-Shrimps.jpg",
+            "start": "13:55",
+            "end": "16:10"
+        }, {
+            "songtitle": "Stole My Heart",
+            "artist": "Gordy Garris Group",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/Gordy-Garris-Group.jpg",
+            "start": "16:12",
+            "end": "20:10"
+        }, {
+            "songtitle": "Orphan Blues",
+            "artist": "Rory Laye",
+            "start": "20:30",
+            "end": "23:20"
+        }, {
+            "songtitle": "The Alongside Life",
+            "artist": "Philos Moore",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/Philos-Moore.jpg",
+            "start": "23:21",
+            "end": "29:00"
+        }, {
+            "songtitle": "The Hardest Part",
+            "artist": "Mason Murphy",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/mason-murphy.jpg",
+            "start": "29:11",
+            "end": "33:00"
+        }]
     }, {
         "id": 2,
         "title": "Daily Commute #139",
         "url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/show139.json",
         "date": "2016-09-30",
-        "track": "https://s3.amazonaws.com/musolist/podcasts-app/shows/139.mp3"
+        "track": "https://s3.amazonaws.com/musolist/podcasts-app/shows/139.mp3",
+        "playlist": [{
+            "songtitle": "Julia",
+            "artist": "Fast Romantics",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/Fast-Romantics.jpg",
+            "start": "00:18",
+            "end": "03:32"
+        }, {
+            "songtitle": "Who Are You",
+            "artist": "Dolly Spartans",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/Dolly-Spartans.jpg",
+            "start": "03:57",
+            "end": "07:09"
+        }, {
+            "songtitle": "Options",
+            "artist": "Ollin",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/Ollin.jpg",
+            "start": "07:10",
+            "end": "10:44"
+        }, {
+            "songtitle": "Devil In The Details",
+            "artist": "The Cyns",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/The-Cyns.jpg",
+            "start": "10:45",
+            "end": "14:08"
+        }, {
+            "songtitle": "A Different Story",
+            "artist": "KonaSounds",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/KonaSounds.jpg",
+            "start": "14:33",
+            "end": "18:13"
+        }, {
+            "songtitle": "A Joke From Hell",
+            "artist": "Oonazoona",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/Oonazoona.jpg",
+            "start": "18:14",
+            "end": "21:02"
+        }, {
+            "songtitle": "Slow",
+            "artist": "Callum Chynoweth Band",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/Callum-Chynoweyth-Band.jpg",
+            "start": "21:19",
+            "end": "24:20"
+        }, {
+            "songtitle": "Collection",
+            "artist": "The Filthy Violets",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/The-Filthy-Violets.jpg",
+            "start": "24:28",
+            "end": "27:00"
+        }, {
+            "songtitle": "Think About You",
+            "artist": "Chase Klyn",
+            "cover_url": "https://s3.amazonaws.com/musolist/podcasts-app/shows/pics/Chase-Klyn.jpg",
+            "start": "27:07",
+            "end": "30:18"
+        }]
     }]
 }

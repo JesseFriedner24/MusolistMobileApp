@@ -22,38 +22,64 @@ var example = angular.module('ionicSound', ['ionic', 'angular-momentjs', 'ngCord
     });
 })
 
-example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLoading) {
+example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLoading, $rootScope) {
     document.addEventListener("deviceready", onDeviceReady, false);
+    $rootScope.podcastPositionSeconds = 0;
 
     function onDeviceReady() {
         console.log(Media);
     }
+    $scope.podcastPosition = function() {
+        console.log('in podcast position');
+        var trackPosition = $rootScope.podcastPositionSeconds;
+        // console.log($rootScope.playlist);
+        console.log(trackPosition);
+        for (var i = 0; i < $rootScope.playlist.length; i++) {
+
+            var startTime = $rootScope.playlist[i].start;
+            var endTime = $rootScope.playlist[i].end;
+
+            var a = startTime.split(':');
+            var b = endTime.split(':');
+
+            var startTimeInSeconds = (+a[0]) * 60 + (+a[1]);
+            var endTimeInSeconds = (+b[0]) * 60 + (+b[1]);
+
+            console.log(startTimeInSeconds);
+            console.log(endTimeInSeconds);
+
+            var startTimeInt = parseInt($rootScope.playlist[i].start);
+            var endTimeInt = parseInt($rootScope.playlist[i].end);
+
+            console.log($rootScope.playlist[i].start);
+            console.log($rootScope.playlist[i].end);
+            // console.log(startTimeInt);
+            // console.log(endTimeInt);
+
+            var startTimeString = startTimeInSeconds.toString();
+            var endTimeString = endTimeInSeconds.toString();
+
+            // console.log(startTimeString);
+            // console.log(endTimeString);
+
+
+            if ((trackPosition >= startTimeInSeconds) && (trackPosition <= endTimeInSeconds)) {
+                console.log($rootScope.playlist[i].artist);
+                console.log($rootScope.playlist[i].songtitle);
+            } else {
+        
+            }
+        }
+    }
+
     $scope.play = function(src) {
         console.log('src: ' + src);
         var media = $cordovaMedia.newMedia(src, null, null, mediaStatusCallback);
-
-
-
-
         var mediaTimer = setInterval(function() {
-            console.log('5 seconds');
-            // get media position
-            media.getCurrentPosition(
-                // success callback
-                function(position) {
-                    if (position > -5) {
-                        console.log((position) + " sec");
-                    }
-                },
-                // error callback
-                function(e) {
-                    console.log("Error getting pos=" + e);
-                }
-            );
+            console.log('boom');
+            $rootScope.podcastPositionSeconds++;
+            console.log($rootScope.podcastPositionSeconds);
         }, 1000);
-
-
-
         //play audio
         media.play();
         //pause audio
@@ -64,8 +90,6 @@ example.controller("ExampleController", function($scope, $cordovaMedia, $ionicLo
             }
         }
     };
-
-
 
     var mediaStatusCallback = function(status) {
         if (status == 1) {
