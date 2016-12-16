@@ -9,14 +9,16 @@
         <div>
             <div class="item item-avatar">
                 <img src="../img/musoimage.png">
-                <p>{{selectedTrack.title}}
-                    <p>
+                <h2>{{selectedTrack.title}}
+                    </h2>
                         <p>{{selectedTrack.date}}</p>
-                        <img class = "size" ng-src = "{{selectedTrack.playlist[1].cover_url}}"/>
+                        
             </div>
+            <img class = "full-size" src = "http://burstmarketing.net/wp-content/uploads/2014/08/Ipod1.jpg"/>
             <div class="item tabs tabs-secondary tabs-icon-left">
                 <div class="item item-image">
                 </div>
+
                 <a class="tab-item dark" ng-click="play(selectedTrack.track)">
                     <i class="icon ion-music-note assertive"></i> Start Podcast
                 </a>
@@ -28,6 +30,7 @@
                 </a>
             </div>
         </div>
+
     </ion-content>
     <div class="bar bar-footer bar-assertive">
         <div class="title">Music for locals, by locals</div>

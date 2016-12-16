@@ -3,24 +3,36 @@
   
 
 
-        <div class="list card">
+        <!-- <div class="list card">
             <div class="item item-avatar">
-                <img src="https://pbs.twimg.com/profile_images/714877177804767232/zo3EK9Uq.jpg">
-                <ul ng-repeat="bookmark in bookmarkList">
+                <img ng-src= "{{selectedTrack.playlist[1].cover_url}}"> -->
+               <!--  <ul ng-repeat="bookmark in bookmarkList">
                 <li>{{bookmark.artist}}</li>
                 <li>{{bookmark.title}}</li>
-                </ul>
-            </div>
-            <!-- <div class="item item-body">
+                </ul> -->
+            
+         <!--    <div ng-repeat="bookmark in bookmarkList" class="item item-body">
                 <img class="full-image" src="http://data.whicdn.com/images/43228099/original.jpg">
                 <p>
-                    Blink 182 is the greatest band ever!.
+                    {{bookmark.title}}
                 </p>
-                <p> -->
-              <!--       <a href="#" class="subdued">1 Like</a>
-                    <a href="#" class="subdued">5 Comments</a>
-                </p> -->
+                <p>{{bookmark.artist}}</p> -->
+         
+            <div class="list" ng-repeat="bookmark in bookmarkList">
+
+    <a class="item item-thumbnail-left" href="#">
+      <img src="../img/elogo.png">
+      <h2>{{bookmark.artist}}</h2>
+      <p>{{bookmark.title}}</p>
+    </a>
+
+
+
+</div>
+
+
+         <!--    </div>
             </div>
-        </div>
+        </div> -->
     </ion-content>
 </ion-view>

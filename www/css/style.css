@@ -9,6 +9,18 @@
     }
 }
 
+.home {
+   background: url('../img/Vinyl.jpg') no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+}
+
+/*.podplayer {background: url('http://burstmarketing.net/wp-content/uploads/2014/08/Ipod1.jpg') no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+}}*/
 
 /*.login {
     background: url(../img/concert.jpg);
@@ -35,6 +47,7 @@
     border-color: rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0);
     color: white;
+    opacity: 0.85;
 }
 
 .custom {
@@ -73,12 +86,12 @@
 
 
 /*Just makes the type white*/
-
+.custom h1,
 .custom h2,
 .custom h3,
 .custom p,
 .custom a {
-    color: white;
+    color: black;
     /*Text color for each item, overrides the color property above*/
 }
 
